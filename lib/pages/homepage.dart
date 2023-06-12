@@ -1,22 +1,28 @@
 import 'package:flutter/material.dart';
+
 class HomePage extends StatelessWidget {
 
 
   @override
   Widget build(BuildContext context) {
-    int days = 30;
-    var day = 'tuesday';
+
 
     return  Scaffold(
-      appBar: AppBar(
-        title: Text('catalog app'),
+      appBar: AppBar(title: Text('NearBy'),
+      actions:[IconButton(
+        icon:
+          Icon(Icons.search),onPressed:(){},
       ),
-      body: Center(
-        child: Container(
-            child: Text("welcome bro the world od app dev; day $days today is $day")
+      ],
+      ),
 
-        ),
-      ),
+      floatingActionButton:
+          FloatingActionButton(
+            onPressed: (){},
+            child: Icon(Icons.card_giftcard),
+
+
+          ),
       drawer: Drawer(),
     );
   }
